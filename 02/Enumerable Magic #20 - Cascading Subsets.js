@@ -19,3 +19,9 @@ function eachCons(array, n) {
     }
     return result.filter(e => e.length === n)
 }
+
+//other solution
+
+function eachCons(array, n) {
+    return array.map((result, each) => array.slice(each, each + n)).filter(result => result.length == n))
+}
