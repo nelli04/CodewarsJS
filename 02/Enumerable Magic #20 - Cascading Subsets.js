@@ -9,3 +9,13 @@ function eachCons(array, n) {
     }
     return result
 }
+
+//other solution
+
+function eachCons(array, n) {
+    const result = [];
+    for (let i = 0; i < array.length; i++) {
+        result.push(array.slice(i, i + n))
+    }
+    return result.filter(e => e.length === n)
+}
