@@ -4,3 +4,8 @@ function mygcd(x,y){
     }
     return mygcd(y, x % y)
   }
+
+  //other solution
+  function mygcd(x,y){
+    return y == 0 ? x : mygcd(y, x % y)
+  }
