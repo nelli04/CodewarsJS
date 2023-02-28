@@ -2,6 +2,7 @@ function sumIntervals(intervals) {
     intervals.sort(function (a, b) {
           return a[0] - b[0]
       })
+    
       let x = [intervals[0]]
       let z = intervals[0][1] - intervals[0][0]
       for (let i = 1; i < intervals.length; i++) {
