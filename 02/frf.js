@@ -19,3 +19,4 @@ function noIfsNoButs(a, b) {
       case 0: return `${a} is equal to ${b}`;
     }
   }
+  
